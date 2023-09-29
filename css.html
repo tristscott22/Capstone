@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shoe Store</title>
+    <style>
+        /* Add your default CSS styles here */
+        .shoe {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /<div class="container">
+  <div class="imgbox">
+    <img src="https://i.ibb.co/t8w4YyL/nike.png" alt="Nike Air Max 270" title="Nike Air Max 270" />
+  </div>
+  <div class="details">
+    <div class="content">
+      <h2>Nike Air Max 270<br><span>Running Collection</span></h2>
+      <h3>$199.99</h3>
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="pruductcard.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="card-producto">
+    <h1>
+      Adidas Shoes</h1>
+    <p>
+      The best shoes in marketplace</p>
+    <div class="pic-producto">
+    </div>
+    <div class="colors-producto">
+      <span class="blue active" data-color="#74b9ff" data-pic="url(image/.1.png)"></span>
+      <span class="pink" data-color="#fab1a0" data-pic="url(image/2.png)"></span>
+      <span class="green" data-color="#55efc4" data-pic="url(image/3.png)"></span>
+      <span class="purple" data-color="#686de0" data-pic="url(image/4.png)"></span>
+    </div>
+    <div class="info-producto">
+      <div class="price-producto">
+        30$</div>
+      <a href="#" class="button-producto">Add to Cart</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+edited : https://i.ibb.co/t8w4YyL/nike.png */
+        .shoe.nike-air-max {
+            background-color: #f2f2f2;
+        }
+
+        .shoe.adidas-superstar {
+            background-color: #ffeb3b;
+        }
+
+        .shoe.puma-clyde {
+            background-color: #e57373;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the My Shoe Store</h1>
+
+    <!-- Shoe Catalog -->
+    <h2>Shoe Catalog</h2>
+    <ul id="shoeList">
+        <!-- Shoe items will be dynamically inserted here -->
+    </ul>
+
+    <!-- JavaScript -->
+    <script>
+        const shoes = [
+            { id: 1, brand: 'Nike', model: 'Air Max', price: 199.99 },
+            { id: 2, brand: 'Adidas', model: 'Superstar', price: 89.99 },
+            { id: 3, brand: 'Puma', model: 'Clyde', price: 79.99 },
+        ];
+
+        // Function to render shoe catalog
+        function renderShoeCatalog() {
+            const shoeList = document.getElementById('shoeList');
+
+            shoes.forEach((shoe) => {
+                const shoeItem = document.createElement('li');
+                shoeItem.textContent = `${shoe.brand} ${shoe.model} - $${shoe.price}`;
+                
+                // Add CSS class based on brand and model
+                const brandModelClass = `${shoe.brand.toLowerCase()}-${shoe.model.toLowerCase()}`;
+                shoeItem.classList.add('shoe', brandModelClass);
+
+                shoeList.appendChild(shoeItem);
+            });
+        }
+
+        // Call the function to render the shoe catalog
+        renderShoeCatalog();
+    </script>
+</body>
+</html>
