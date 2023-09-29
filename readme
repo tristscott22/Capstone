@@ -1,6 +1,6 @@
 # Fake Shoe Store API
 
-This is a simple example of a fake shoe store API implemented in JavaScript using Node.js and Express. The API provides basic functionality for browsing and managing shoes in a fictional online shoe store.
+This is a simple example of a my shoe store API implemented in JavaScript using Node.js and Express. The API provides basic functionality for browsing and managing shoes in a fictional online shoe store.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -12,18 +12,4 @@ This is a simple example of a fake shoe store API implemented in JavaScript usin
 - [Contributing](#contributing)
 - [License](#license)
 
-## Getting Started
 
-### Prerequisites
-
-Before running the API, ensure you have the following software installed on your system:
-
-- Node.js: [Download](https://nodejs.org/)
-- npm (Node Package Manager), typically comes with Node.js.
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/tristscott22/fake-shoe-store-api.git
